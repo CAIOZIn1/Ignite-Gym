@@ -4,7 +4,7 @@ import { useFonts, Nunito_400Regular, Nunito_700Bold } from '@expo-google-fonts/
 
 import { THEME } from './src/theme';
 import Loading from '@components/Loading';
-import SignIn from '@screens/Singn';
+import SignUp from '@screens/SingnUp';
 
 export default function app(){
   const [fontsLoaded] = useFonts({Nunito_400Regular, Nunito_700Bold});
@@ -17,7 +17,7 @@ export default function app(){
         translucent
       />
 
-      {fontsLoaded ? <SignIn /> : <Loading /> }
+      {fontsLoaded ? <SignUp /> : <Loading /> }
     </NativeBaseProvider>
   );
 }
