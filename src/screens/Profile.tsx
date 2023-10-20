@@ -17,7 +17,7 @@ export function Profile(){
         title="Perfil"
       />
 
-      <ScrollView>
+      <ScrollView contentContainerStyle={{paddingBottom: 36}}>
         <Center mt={6} px={7}>
           {
             photoIsLoading ?
@@ -49,10 +49,8 @@ export function Profile(){
             bg='gray.600'
             isDisabled
           />
-        </Center>
 
-        <VStack px={7} mt={12} mb={9}>
-          <Heading color='gray.200' fontSize='md' mb={2}>
+          <Heading color='gray.200' fontSize='md' mb={2} alignSelf='flex-start' mt={12}>
             Alterar senha
           </Heading>
 
@@ -77,7 +75,7 @@ export function Profile(){
           <Button mt={4}>
             Atualizar
           </Button>
-        </VStack>
+        </Center>
       </ScrollView>
     </VStack>
   )

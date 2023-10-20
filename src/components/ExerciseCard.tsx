@@ -14,13 +14,13 @@ export function ExerciseCard({title, img,...rest}: Props){
     >
       <HStack bg='gray.500' alignItems='center' p={2} pr={4} rounded='md' mt={3}>
         <Image
-          source={{uri: img? img : 'https://www.acritica.com/image/policy:1.298200.1678903460:1678903460/image.jpg?f=default&w=1200' }}
+          source={{uri: img? img : 'https://www.acritica.com/image/policy:1.298200.1678903460:1678903460/image.jpg?f=default&w=1200'}}
           alt="Imagem Remada"
           w={16}
           h={16}
           rounded='md'
           mr={4}
-          resizeMode='center'
+          resizeMode='cover'
         />
 
         <VStack flex={1}>
